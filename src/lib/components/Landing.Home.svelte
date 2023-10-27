@@ -2,10 +2,10 @@
     import {Icon, Truck, Play, DocumentArrowDown} from 'svelte-hero-icons'
 </script>
 
-<div class="grid grid-cols-3 xs:grid-cols-1 flex-grow px-16 py-32">
+<div class="flex flex-row flex-wrap flex-grow px-16 py-32">
 
     <!--    App download lead-->
-    <div class="flex flex-col justify-between gap-16">
+    <div class="flex-1 md:w-4/12 flex flex-col justify-between gap-16">
         <div class="text-primary font-semibold text-6xl leading-[1.25em]">Entrega <span class="text-accent">Veloz</span>
             y Fácil de <span
                     class="text-accent">Encontrar</span>
@@ -40,8 +40,8 @@
     </div>
 
     <!--   Center Pics -->
-    <div class="flex-grow p-4 flex flex-row items-center">
-        <div class="relative aspect-square flex flex-row items-center justify-center">
+    <div class=" flex-1 lg:basis-0 basis-full p-4 flex flex-row items-center justify-center">
+        <div class="relative aspect-square flex flex-row items-center justify-center" style="max-width: 500px">
             <svg class="absolute top-0 right-0 w-full aspect-square stroke-[3px] fill-none"
                  viewBox="0 0 100 100"
                  xmlns="http://www.w3.org/2000/svg"
@@ -56,15 +56,26 @@
                 M15,78
                 A 45 45 0 0 0 70 90" class="stroke-primary"/>
             </svg>
-            <img src="/landing/icecream.png" alt="icecream" class="absolute w-32 top-[-100px] right-0">
-            <img class="aspect-square w-3/4 relative" style="clip-path: circle(50%)" src="/landing/dish-bg.png"
+
+            <div class="absolute w-4/12 left-[65%] -top-1/4">
+                <div class=" absolute aspect-square w-[150%] rounded-full bg-accent opacity-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4">
+
+                </div>
+                <img src="/landing/icecream.png" alt="icecream" class="relative">
+            </div>
+            <div class="absolute w-4/12 left-0 top-3/4 bg-yellow-400">
+                <div class=" absolute aspect-square w-[100%] rounded-full bg-secondary opacity-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"/>
+            </div>
+            <img class="aspect-square w-3/4  relative" style="clip-path: circle(50%)"
+                 src="/landing/dish-bg.png"
                  alt="food dish">
-            <img src="/landing/salad.png" alt="salad" class="absolute w-44 top-0 left-16 drop-shadow-2xl">
+            <img src="/landing/salad.png" alt="salad" class="absolute w-5/12 top-0 left-12"
+                 style="filter: drop-shadow(10px 10px 10px #222);">
         </div>
     </div>
 
     <!--    Bullet Points-->
-    <div class="flex flex-col justify-between">
+    <div class="flex-1 md:w-3/12 flex flex-col justify-between">
         {#each {length: 3} as _, i}
             <div class="flex flex-row gap-4 items-center">
                 <div>
@@ -80,3 +91,10 @@
         {/each}
     </div>
 </div>
+
+<style>
+    .background-circle::before {
+        content: "hello";
+        @apply p-32 bg-accent rounded-full top-0 right-0;
+    }
+</style>
