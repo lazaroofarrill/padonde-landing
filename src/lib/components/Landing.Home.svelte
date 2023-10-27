@@ -2,7 +2,7 @@
     import {Icon, Truck, Play, DocumentArrowDown} from 'svelte-hero-icons'
 </script>
 
-<div class="grid grid-cols-3 flex-grow px-16 py-32">
+<div class="grid grid-cols-3 xs:grid-cols-1 flex-grow px-16 py-32">
 
     <!--    App download lead-->
     <div class="flex flex-col justify-between gap-16">
@@ -10,9 +10,11 @@
             y Fácil de <span
                     class="text-accent">Encontrar</span>
         </div>
-        <div class="flex flex-row gap-8">
+        <div class="flex flex-row gap-4">
             <div>
-                <div class="aspect-square bg-accent text-surface rounded-xl shadow-2xl w-16 inline-block border-2 border-primary"/>
+                <!--                <div class="aspect-square bg-accent text-surface rounded-xl shadow-2xl w-16 inline-block border-2 border-primary">-->
+                <!--                </div>-->
+                <img src="/landing/face.png" alt="">
             </div>
             <div class="opacity-50 text-primary text-sm">
                 Muy cansado para cocinar o desea pasar un rato agradable, somos
@@ -54,7 +56,10 @@
                 M15,78
                 A 45 45 0 0 0 70 90" class="stroke-primary"/>
             </svg>
-            <img class="aspect-square w-3/4" style="clip-path: circle(50%)" src="/landing/dish-bg.png" alt="food dish">
+            <img src="/landing/icecream.png" alt="icecream" class="absolute w-32 top-[-100px] right-0">
+            <img class="aspect-square w-3/4 relative" style="clip-path: circle(50%)" src="/landing/dish-bg.png"
+                 alt="food dish">
+            <img src="/landing/salad.png" alt="salad" class="absolute w-44 top-0 left-16 drop-shadow-2xl">
         </div>
     </div>
 
