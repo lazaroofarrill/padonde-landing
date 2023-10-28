@@ -26,7 +26,7 @@
 		<div class="absolute top-0 left-o w-full h-full">
 			<img
 				class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/3 w-[30vw]"
-				src="/landing/dish_with_fork.png"
+				src={imgUrl('agency.popmind.padonde/dish_with_fork.webp')}
 				alt="dish with fork"
 				style="filter: drop-shadow(5px 5px 5px #222);"
 			/>
