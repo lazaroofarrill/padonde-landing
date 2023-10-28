@@ -83,7 +83,7 @@
 					class="relative w-full h-full"
 				/>
 			</div>
-			<div class="absolute w-4/12 left-0 top-3/4 bg-yellow-400">
+			<div class="absolute w-4/12 left-0 top-3/4">
 				<div
 					class=" absolute aspect-square w-[100%] rounded-full bg-secondary opacity-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
 				/>
