@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - release
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HOST: ${{ secrets.SSH_HOST }}
+      USERNAME: ${{ secrets.SSH_USER }}
+      PORT: ${{ secrets.SSH_PORT }}
+      KEY: ${{ secrets.SSH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.0
+          cache: 'npm'
+      - run: npm install
+      - run: npm build
+
+name: Deploy
