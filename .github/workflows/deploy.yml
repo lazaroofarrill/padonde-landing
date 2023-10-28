@@ -32,7 +32,7 @@ jobs:
           PORT: ${{ secrets.SSH_PORT }}
           KEY: ${{ secrets.SSH_KEY }}
         with:
-          source: './build/*'
+          source: './build/'
           target: '/var/www/padonde/'
 
 name: Deploy

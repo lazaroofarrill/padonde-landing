@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Icon, Truck, Play, DocumentArrowDown } from 'svelte-hero-icons';
+	import { imgUrl } from '$lib/cloudinary';
 </script>
 
 <div class="flex flex-row flex-wrap flex-grow px-16 py-32">
@@ -13,7 +14,7 @@
 			<div>
 				<!--                <div class="aspect-square bg-accent text-surface rounded-xl shadow-2xl w-16 inline-block border-2 border-primary">-->
 				<!--                </div>-->
-				<img src="/landing/face.png" alt="" />
+				<img src={imgUrl('agency.popmind.padonde/face.png')} alt="" />
 			</div>
 			<div class="opacity-50 text-primary text-sm">
 				Muy cansado para cocinar o desea pasar un rato agradable, somos la solución, a un click de
@@ -78,7 +79,7 @@
 				<div
 					class=" absolute aspect-square w-[150%] rounded-full bg-accent opacity-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4"
 				/>
-				<img src="/landing/icecream.png" alt="icecream" class="relative" />
+				<img src={imgUrl('agency.popmind.padonde/icecream.webp')} alt="icecream" class="relative" />
 			</div>
 			<div class="absolute w-4/12 left-0 top-3/4 bg-yellow-400">
 				<div
@@ -88,11 +89,11 @@
 			<img
 				class="aspect-square w-3/4 relative"
 				style="clip-path: circle(50%)"
-				src="/landing/dish-bg.png"
+				src={imgUrl('agency.popmind.padonde/dish_bg.webp')}
 				alt="food dish"
 			/>
 			<img
-				src="/landing/salad.png"
+				src={imgUrl('agency.popmind.padonde/salad.webp')}
 				alt="salad"
 				class="absolute w-5/12 top-0 left-12"
 				style="filter: drop-shadow(10px 10px 10px #222);"
