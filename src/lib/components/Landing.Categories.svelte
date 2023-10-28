@@ -45,7 +45,7 @@
 					<img
 						src={imgUrl('agency.popmind.padonde/tacos.webp')}
 						alt="tacos"
-						class="w-full drop-shadow-2xl"
+						class="w-full h-full drop-shadow-2xl"
 					/>
 				</div>
 				<div class="text-center text-primary">Comidas en <span>restaurantes</span></div>
