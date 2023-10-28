@@ -22,6 +22,7 @@
 			src={imgUrl('agency.popmind.padonde/caipirinha')}
 			class="absolute hidden lg:block left-1/2 bottom-0 w-[10vw] translate-y-1/3"
 			alt="caipirinha"
+			style="filter: drop-shadow(1px 1px 1px #222);"
 		/>
 		<div class="absolute top-0 left-o w-full h-full">
 			<img
@@ -57,4 +58,5 @@
 			/>
 		</svg>
 	</div>
+	<div class="h-64" />
 </div>
