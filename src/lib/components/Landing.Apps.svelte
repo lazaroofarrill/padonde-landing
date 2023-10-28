@@ -2,7 +2,7 @@
 	import { imgUrl } from '$lib/cloudinary';
 </script>
 
-<div class="container">
+<div class="container hidden md:block">
 	<div class="h-48" />
 	<div class="relative">
 		<div
