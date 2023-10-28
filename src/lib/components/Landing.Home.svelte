@@ -12,9 +12,7 @@
 		</div>
 		<div class="flex flex-row gap-4">
 			<div>
-				<!--                <div class="aspect-square bg-accent text-surface rounded-xl shadow-2xl w-16 inline-block border-2 border-primary">-->
-				<!--                </div>-->
-				<img src={imgUrl('agency.popmind.padonde/face.png')} alt="" />
+				<img src={imgUrl('agency.popmind.padonde/face.png')} alt="" class="w-full h-full" />
 			</div>
 			<div class="opacity-50 text-primary text-sm">
 				Muy cansado para cocinar o desea pasar un rato agradable, somos la solución, a un click de
@@ -79,7 +77,11 @@
 				<div
 					class=" absolute aspect-square w-[150%] rounded-full bg-accent opacity-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4"
 				/>
-				<img src={imgUrl('agency.popmind.padonde/icecream.webp')} alt="icecream" class="relative" />
+				<img
+					src={imgUrl('agency.popmind.padonde/icecream.webp')}
+					alt="icecream"
+					class="relative w-full h-full"
+				/>
 			</div>
 			<div class="absolute w-4/12 left-0 top-3/4 bg-yellow-400">
 				<div
