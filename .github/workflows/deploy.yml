@@ -16,7 +16,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.0
-          cache: 'npm'
       - run: pnpm install
       - run: pnpm build
       - name: Copy repository contents via scp
