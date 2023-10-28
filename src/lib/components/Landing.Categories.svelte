@@ -1,3 +1,7 @@
+<script>
+	import { imgUrl } from '$lib/cloudinary';
+</script>
+
 <div class="container relative">
 	<div class="flex flex-row flex-wrap text-center md:text-left items-center">
 		<div class="text-primary w-full md:w-5/12 text-5xl font-medium">
@@ -38,7 +42,11 @@
 						</g>
 					</svg>
 
-					<img src="/landing/categories/tacos.png" alt="tacos" class="w-full drop-shadow-2xl" />
+					<img
+						src={imgUrl('agency.popmind.padonde/tacos.webp')}
+						alt="tacos"
+						class="w-full drop-shadow-2xl"
+					/>
 				</div>
 				<div class="text-center text-primary">Comidas en <span>restaurantes</span></div>
 			</div>
