@@ -1,18 +1,36 @@
+<script>
+	import { imgUrl } from '$lib/cloudinary';
+</script>
+
 <div class="container">
 	<div class="h-48" />
 	<div class="relative">
+		<div
+			class="absolute text-surface left-1/3 top-1/3 -translate-y-1/4 w-[386px] flex flex-col gap-4"
+		>
+			<div class="text-5xl">Descargue nuestra App Móvil</div>
+			<div class="opacity-80">
+				Cada día somos una comunidad más grande, enfocados en el bienestar de nuestros clientes...
+			</div>
+		</div>
 		<img
-			src="/landing/phone.png"
+			src={imgUrl('agency.popmind.padonde/phone.webp')}
 			alt="phone"
 			class="w-[30vw] top-1/2 left-0 md:absolute -translate-y-[45%]"
 		/>
 		<img
-			src="/landing/caipirinha.png"
+			src={imgUrl('agency.popmind.padonde/caipirinha')}
 			class="absolute hidden lg:block left-1/2 bottom-0 w-[10vw] translate-y-1/3"
 			alt="caipirinha"
 		/>
 		<div class="absolute top-0 left-o w-full h-full">
-			<div class="absolute bottom-0 flex flex-row justify-end gap-4 pr-8 w-full">
+			<img
+				class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/3 w-[30vw]"
+				src="/landing/dish_with_fork.png"
+				alt="dish with fork"
+				style="filter: drop-shadow(5px 5px 5px #222);"
+			/>
+			<div class=" absolute bottom-0 flex flex-row justify-end gap-4 pr-8 w-full">
 				<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars-->
 				{#each { length: 2 } as elem, i}
 					<div
