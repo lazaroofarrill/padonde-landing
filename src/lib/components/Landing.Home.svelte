@@ -21,7 +21,7 @@
 		</div>
 		<div class="flex flex-row justify-between h-16">
 			<div
-				class="flex flex-row items-center gap-3 bg-accent p-4 text-surface rounded-2xl shadow-3xl"
+				class="flex flex-row items-center gap-3 bg-accent p-4 text-surface rounded-3xl shadow-3xl"
 			>
 				<div class="inline-block w-8">
 					<Icon src={DocumentArrowDown} />
@@ -31,7 +31,7 @@
 			<div class="flex flex-row items-center gap-3">
 				<div>
 					<div
-						class="aspect-square w-16 p-4 shadow-3xl rounded-2xl bg-primary text-surface flex flex-row items-center justify-center relative"
+						class="aspect-square w-16 p-4 shadow-3xl rounded-3xl bg-primary text-surface flex flex-row items-center justify-center relative"
 					>
 						<Icon src={Play} class="absolute w-8/12" />
 					</div>
