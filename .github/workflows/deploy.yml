@@ -5,6 +5,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
+    environment: prod
     env:
       HOST: ${{ secrets.SSH_HOST }}
       USERNAME: ${{ secrets.SSH_USER }}
