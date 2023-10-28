@@ -57,7 +57,7 @@
 					<img
 						src={imgUrl('agency.popmind.padonde/tacos.webp')}
 						alt="tacos"
-						class="w-full h-full drop-shadow-2xl"
+						class="w-full h-full"
 					/>
 				</div>
 				<div class="text-center text-primary font-semibold text-xl">
