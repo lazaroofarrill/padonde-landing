@@ -12,15 +12,15 @@
 		/>
 	</div>
 
-	<div class="flex flex-row flex-wrap text-center md:text-left items-center">
+	<div class="p-4 flex flex-row flex-wrap gap-4 text-center md:text-left items-center">
 		<div class="text-primary w-full md:w-5/12 text-5xl font-medium">
 			Nuestras <span class="text-accent">mejores</span>
 			categorías de
 			<span class="text-accent">negocios</span>
 		</div>
-		<div class="grid grid-cols-6 basis-0 flex-1">
+		<div class="md:grid grid-cols-6 text-center md:basis-0 md:flex-1">
 			<div
-				class="flex-grow flex-shrink inline-block text-center basis-2 text-base md:text-left col-span-3 col-start-3"
+				class="flex-grow flex-shrink text-center basis-2 text-base md:text-left col-span-3 col-start-3"
 			>
 				No solo se trata de encontrar un lugar para ir u ordenar, comida o bebida, se trata de crear
 				un confort y la experiencia completa pensando en usted...
@@ -28,10 +28,12 @@
 		</div>
 	</div>
 
-	<div class="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 gap-48 pt-16 mb-16">
+	<div
+		class="relative z-10 w-full grid grid-cols-1 md:grid-cols-3 gap-16 p-16 md:p-0 md:gap-48 md:mt-16 mb-16"
+	>
 		<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars-->
 		{#each { length: 3 } as elem, i}
-			<div class="flex flex-col gap-8">
+			<div class="flex flex-col gap-4 md:gap-8">
 				<div class="relative">
 					<svg
 						class="absolute scale-110"
