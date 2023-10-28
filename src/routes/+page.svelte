@@ -1,6 +1,7 @@
 <script>
 	import LandingHome from '$lib/components/Landing.Home.svelte';
 	import LandingApps from '$lib/components/Landing.Apps.svelte';
+	import LandingCategories from '$lib/components/Landing.Categories.svelte';
 </script>
 
 <div class="flex flex-col justify-center items-center">
@@ -21,4 +22,5 @@
 
 	<LandingHome />
 	<LandingApps />
+	<LandingCategories />
 </div>
