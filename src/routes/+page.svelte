@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-col justify-center items-center">
-	<div class="container">
+	<div class="container relative">
 		<div
 			class="bg-primary flex flex-row items-center justify-between text-surface h-16 px-32 rounded-br-[45px] rounded-bl-[45px]"
 		>
