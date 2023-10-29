@@ -18,12 +18,7 @@
 			alt="phone"
 			class="w-[30vw] top-1/2 left-0 md:absolute -translate-y-[45%]"
 		/>
-		<img
-			src={imgUrl('agency.popmind.padonde/caipirinha')}
-			class="absolute hidden lg:block left-1/2 bottom-0 w-[10vw] translate-y-1/3"
-			alt="caipirinha"
-			style="filter: drop-shadow(1px 1px 1px #222);"
-		/>
+
 		<div class="absolute top-0 left-o w-full h-full">
 			<img
 				class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/3 w-[30vw]"
@@ -31,7 +26,14 @@
 				alt="dish with fork"
 				style="filter: drop-shadow(5px 5px 5px #222);"
 			/>
+
 			<div class=" absolute bottom-0 flex flex-row justify-end gap-4 pr-8 w-full">
+				<img
+					src={imgUrl('agency.popmind.padonde/caipirinha')}
+					class="hidden lg:block w-[10vw] translate-y-1/3 object-contain"
+					alt="caipirinha"
+					style="filter: drop-shadow(1px 1px 1px #222);"
+				/>
 				<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars-->
 				{#each { length: 2 } as elem, i}
 					<div

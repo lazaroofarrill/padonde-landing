@@ -2,9 +2,10 @@
 	import LandingHome from '$lib/components/Landing.Home.svelte';
 	import LandingApps from '$lib/components/Landing.Apps.svelte';
 	import LandingCategories from '$lib/components/Landing.Categories.svelte';
+	import LandingPromos from '$lib/components/Landing.Promos.svelte';
 </script>
 
-<div class="flex flex-col justify-center items-center">
+<div class="flex flex-col justify-center items-center overflow-hidden">
 	<div class="container relative">
 		<div
 			class="bg-primary flex flex-row items-center justify-between text-surface h-16 px-32 rounded-br-[45px] rounded-bl-[45px]"
@@ -23,4 +24,5 @@
 	<LandingHome />
 	<LandingApps />
 	<LandingCategories />
+	<LandingPromos />
 </div>
