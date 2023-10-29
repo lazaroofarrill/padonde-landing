@@ -1,5 +1,6 @@
 <script>
 	import LandingPromosTornBanner from '$lib/components/Landing.Promos.TornBanner.svelte';
+	import { imgUrl } from '$lib/cloudinary';
 </script>
 
 <div class="relative mt-32 pt-32 w-full promo-container">
@@ -32,8 +33,12 @@
 
 			<!--			Phone pictures-->
 			<div class="flex flex-row rotate-45 -translate-x-1/3 items-center">
-				<img src="/landing/phone.png" alt="phone screen home" />
-				<img src="/landing/phone.png" class=" h-1/2 object-contain" alt="phone screen details" />
+				<img src={imgUrl('agency.popmind.padonde/phone.webp')} alt="phone screen home" />
+				<img
+					src={imgUrl('agency.popmind.padonde/phone.webp')}
+					class=" h-1/2 object-contain"
+					alt="phone screen details"
+				/>
 			</div>
 		</div>
 	</div>
