@@ -5,7 +5,6 @@
 
 <div class="relative mt-32 pt-32 w-full promo-container">
 	<LandingPromosTornBanner class="absolute top-0 left-0 w-full fill-primary" />
-	<!--    <div class="absolute h-1/2 aspect-square bg-primary-radial rounded-full blur-3xl"/>-->
 
 	<div class="flex flex-row justify-center">
 		<div class="container text-3xl text-surface z-10 grid grid-cols-1 md:grid-cols-3">
