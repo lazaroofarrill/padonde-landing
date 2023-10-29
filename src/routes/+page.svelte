@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col justify-center items-center overflow-hidden">
-	<div class="container relative">
+	<div class="hidden container relative">
 		<div
 			class="bg-primary flex flex-row items-center justify-between text-surface h-16 px-32 rounded-br-[45px] rounded-bl-[45px]"
 		>

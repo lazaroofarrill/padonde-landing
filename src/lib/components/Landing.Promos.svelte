@@ -2,18 +2,14 @@
 	import LandingPromosTornBanner from '$lib/components/Landing.Promos.TornBanner.svelte';
 </script>
 
-<div class="relative mt-32 py-64 w-full">
+<div class="relative mt-32 pt-32 w-full promo-container">
 	<LandingPromosTornBanner class="absolute top-0 left-0 w-full fill-primary" />
-	<div
-		class="absolute hidden bg-black w-full h-4/6 top-1/2 -translate-y-1/2
-            flex flex-row justify-center items-center"
-	>
-		<div class="h-1/2 aspect-square bg-primary-radial rounded-full blur-3xl" />
-	</div>
+	<!--    <div class="absolute h-1/2 aspect-square bg-primary-radial rounded-full blur-3xl"/>-->
 
 	<div class="flex flex-row justify-center">
 		<div class="container text-3xl text-surface z-10 grid grid-cols-1 md:grid-cols-3">
-			<div class="flex flex-col items-start gap-8">
+			<!--			Texts-->
+			<div class="flex flex-col items-start gap-8 justify-between py-32">
 				<div class="text-4xl font-semibold">
 					Exelentes Promos para su <span class="text-accent">negocio</span>
 				</div>
@@ -26,15 +22,34 @@
 					<div>Como Usar</div>
 				</div>
 			</div>
-			<div class=" text-center flex flex-row justify-center text-secondary text-9xl -rotate-12">
+
+			<!--			Logo-->
+			<div
+				class="text-center flex flex-row justify-center text-secondary text-9xl -rotate-12 translate-x-1/4"
+			>
 				Logo
+			</div>
+
+			<!--			Phone pictures-->
+			<div class="flex flex-row rotate-45 -translate-x-1/3 items-center">
+				<img src="/landing/phone.png" alt="phone screen home" />
+				<img src="/landing/phone.png" class=" h-1/2 object-contain" alt="phone screen details" />
 			</div>
 		</div>
 	</div>
 </div>
 
-<style>
-	.bg-primary-radial {
-		background: radial-gradient(#fff -200%, theme('colors.primary') 80%);
+<style lang="postcss">
+	/*.bg-primary-radial {*/
+	/*    background: radial-gradient(#fff -200%, theme('colors.primary') 80%);*/
+	/*}*/
+	.promo-container::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		background-color: theme(colors.primary);
 	}
 </style>
